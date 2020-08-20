@@ -157,7 +157,10 @@ io.sockets.on('connection', (socket) => {
 
 });
 
+app.get("/", (req, res) => {
+    res.sendFile('/index.html', { root: __dirname });
+})
 
-server.listen(3000, () => {
+server.listen(process.env.PORT || 3000, () => {
     console.log('listening on *:3000');
 });
