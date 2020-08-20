@@ -10,6 +10,10 @@ Modify path to server in src/main.js and start Vue app
 ```bash
 yarn serve
 ```
+Deploy app 
+```bash
+ngrok http 8080 -host-header="localhost:8080"
+```
 
 # Server Set up
 Login to heroku
