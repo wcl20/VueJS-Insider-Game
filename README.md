@@ -1,24 +1,39 @@
-# vue-insider-game
+# VueJS Insider Game
+Online version of the Insider board game.
 
-## Project setup
-```
+## Set up
+Install yarn packages
+```bash
 yarn install
 ```
-
-### Compiles and hot-reloads for development
-```
+Modify path to server in src/main.js and start Vue app
+```bash
 yarn serve
 ```
 
-### Compiles and minifies for production
+# Server Set up
+Login to heroku
+```bash
+heroku login
 ```
-yarn build
+Find app
+```bash
+heroku:git:remote -a <app>
 ```
-
-### Lints and fixes files
+Push server to heroku
+```bash
+git subtree push --prefix server heroku master
 ```
-yarn lint
+Check available apps
+```bash
+heroku apps
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Start app
+```bash
+heroku ps:scale web=1 --app <app>
+heroku open --app <app>
+```
+Stop app
+```bash
+heroku ps:scale web=0 --app <app>
+```
