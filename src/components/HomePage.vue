@@ -64,7 +64,7 @@ export default {
 }
 
 .name-input {
-    width: 40%;
+    width: 60%;
     display: flex;
 }
 

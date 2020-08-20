@@ -56,6 +56,8 @@ export default {
 
 .main-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .secondary-container {
@@ -65,6 +67,12 @@ export default {
 .role {
     text-align: center;
     margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-container {
+      flex-direction: column;
+  }
 }
 
 </style>

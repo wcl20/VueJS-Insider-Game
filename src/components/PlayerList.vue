@@ -91,4 +91,10 @@ export default {
     margin: 0 5px;
 }
 
+@media only screen and (max-width: 600px) {
+  .player-list{
+      width: 80%;
+  }
+}
+
 </style>
