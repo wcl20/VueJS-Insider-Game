@@ -71,7 +71,7 @@ export default {
 
 @media only screen and (max-width: 600px) {
   .main-container {
-      flex-direction: column;
+      flex-direction: column-reverse;
   }
 }
 
